@@ -1,7 +1,7 @@
 # travis-build-badge
 to show project build status(success/fail) by travic badge.
 
-[![Build Status](https://travis-ci.org/saeed3e/tabs.svg?branch=master)](https://travis-ci.org/saeed3e/tabs)
+[![Build Status](https://travis-ci.org/saeed3e/travis-build-badge.svg?branch=master)](https://travis-ci.org/saeed3e/travis-build-badge)
 
 ### Step1: login to [travis](https://travis-ci.org/) account with your [github](https://github.com/) credential  and authorize travis to access your github repositories.
 ### Step2: Go to "accounts" setting by hoveing on your profile pic.
@@ -34,6 +34,8 @@ script:
 ```
 
 ### Step5: Commit and push your changes on git.
+
+### After these steps travis automatically get to know that there are some changes in your git repo and re-run your build suit.
 
 # Note: 
 #### Make sure you already tested your test cases on your local machine to prevent any kind of error.
