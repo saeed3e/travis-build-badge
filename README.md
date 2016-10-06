@@ -6,7 +6,7 @@ to show project build status(success/fail) by travic badge.
 ### Step1: login to [travis](https://travis-ci.org/) account with your [github](https://github.com/) credential  and authorize travis to access your github repositories.
 ### Step2: Go to "accounts" setting by hoveing on your profile pic.
 ### Step3: Now Enable the repo(by on/off switch button) as shown in images, for which you want to build test cases.
-![picture](https://saeed3e.github.io/travis-build-badge/badge_onoff.PNG) 
+![picture](https://saeed3e.github.io/travis-build-badge/badge_onoff.png) 
 ### Step4: add travis.yml in your project root directory.
 
 ## travis.yml
