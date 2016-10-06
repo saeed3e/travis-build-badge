@@ -2,16 +2,6 @@ module.exports = function(grunt) {
 
     // Project configuration.
     grunt.initConfig({
-        pkg: grunt.file.readJSON('package.json'),
-        uglify: {
-            options: {
-                banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
-            },
-            build: {
-                src: 'src/j/<%= pkg.name %>.js',
-                dest: 'gen/j/<%= pkg.name %>.min.js'
-            }
-        },
         jasmine: {
             coverage: {
                 src: 'src/**/*.js',
@@ -58,10 +48,7 @@ module.exports = function(grunt) {
         },
     });
 
-    grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-jasmine');
-
-    grunt.registerTask('test', ['jasmine']);
-    grunt.registerTask('default', ['uglify','test']);
+    grunt.registerTask('default', ['jasmine']);
 
 };
