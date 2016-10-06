@@ -1,5 +1,7 @@
 # travis-build-badge
-to show project build status(success/fail) by travic badge
+to show project build status(success/fail) by travic badge.
+
+[![Build Status](https://travis-ci.org/saeed3e/tabs.svg?branch=master)](https://travis-ci.org/saeed3e/tabs)
 
 ### Step1: login to [travis](https://travis-ci.org/) account with your [github](https://github.com/) credential  and authorize travis to access your github repositories.
 ### Step2: Go to "accounts" setting by hoveing on your profile pic.
@@ -36,3 +38,6 @@ script:
 # Note: 
 #### Make sure you already tested your test cases on your local machine to prevent any kind of error.
 #### Also your repo contain a valid package.json file to tell travis for your npm dependencies.
+
+
+ For more detail kinldy refer travis [getting started](https://docs.travis-ci.com/user/getting-started) guide
