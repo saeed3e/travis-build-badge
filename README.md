@@ -1,21 +1,16 @@
-Travis-build-badge
+# Travis-build-badge
+to show project build status(success/fail) by traffic badge.
 
-to show project build status(success/fail) by Travis badge.
+[![Build Status](https://travis-ci.org/saeed3e/travis-build-badge.svg?branch=master)](https://travis-ci.org/saeed3e/travis-build-badge)
 
-Build Status
+### Step1: login to [travis](https://travis-ci.org/) account with your [github](https://github.com/) credential  and authorize Travis to access your GitHub repositories.
+### Step2: Go to "accounts" setting by hovering on your profile pic.
+### Step3: Now Enable the repo(by on/off switch button) as shown in images, for which you want to build test cases.
+![picture](https://saeed3e.github.io/travis-build-badge/badge_onoff.PNG) 
+### Step4: add travis.yml in your project root directory.
 
-Step1: login to Travis account with your GitHub credential and authorize Travis to access your GitHub repositories.
-
-Step2: Go to "accounts" setting by hovering on your profile pic.
-
-Step3: Now Enable the repo(by on/off switch button) as shown in images, for which you want to build test cases.
-
-picture
-
-Step4: add travis.yml in your project root directory.
-
-travis.yml
-
+## travis.yml
+```
 sudo: required
 language: node_js
 node_js:
@@ -36,14 +31,15 @@ before_script:
 script: 
  - grunt 
  - grunt test
-Step5: Commit and push your changes on git.
+```
 
-After these steps, Travis automatically gets to know that there are some changes in your git repo and re-run your build suit.
+### Step5: Commit and push your changes on git.
 
-Note:
+### After these steps Travis automatically get to know that there are some changes in your git repo and re-run your build suit.
 
-Make sure you already tested your test cases on your local machine to prevent any kind of error.
+# Note: 
+#### Make sure you already tested your test cases on your local machine to prevent any kind of error.
+#### Also your repo contain a valid package.JSON file to tell Travis for your npm dependencies.
 
-Also, your repo contains a valid package.JSON file to tell Travis for your npm dependencies.
 
-For more detail kindly refer Travis getting started guide
+ For more detail, kindly refers Travis [getting started](https://docs.travis-ci.com/user/getting-started) guide
